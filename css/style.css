@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Header Starts */
+.navbar {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  background-color: #144168 !important;
+}
+
+.navbar .navbar-brand img {
+  max-width: 100px;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #fff;
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar {
+    letter-spacing: 0.1em;
+  }
+
+  .navbar .navbar-nav .nav-link {
+    padding: 0.5em 0.8em;
+    font-family: 'jost', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  .search-and-icons {
+    width: 50%;
+  }
+
+  .search-and-icons form {
+    flex: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar .navbar-brand img {
+    max-width: 7em;
+  }
+
+  .navbar .navbar-collapse {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+  }
+
+  .search-and-icons {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.search-and-icons form input {
+  border-radius: 0;
+  height: 2em;
+  background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='grey' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'/%3E%3C/svg%3E") no-repeat 95%;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  animation: myAnim 0.6s ease 0s 1 normal forwards;
+  z-index: 999999999;
+}
+
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Header Ends */
+
+/* Amenities Section Starts */
+#amenities {
+  padding: 50px 0;
+}
+
+.amenities-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 25px;
+}
+
+.amenities-heading h1 {
+  font-family: 'jost', sans-serif;
+  font-weight: 500;
+  font-size: 33px;
+  color: #144168;
+}
+
+.amenities-heading p {
+  font-family: 'jost', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  max-width: 650px;
+  text-align: center;
+  color: #144168;
+}
+
+/* Amenities Section Ends */
+
+.amenities-card {
+  background-color: #144168;
+  padding: 25px;
+  /* border: 1px solid #000000; */
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.amenities-card h3 {
+  font-family: 'jost', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: #ccb497;
+  margin-top: 15px;
+}
+
+.amenities-card p {
+  font-family: 'jost', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #ccb497;
+  margin-top: -5px;
+}
+
+.amenities-card:hover {
+  transform: translateY(-15px);
+  border-color: 4px solid #ccb497;
+  transition: 0.5s all ease-in-out;
+  border-radius: 10px;
+}
+
+.amenities-card:hover h3 {
+  color: #fff;
+  transition: 0.2s all ease-in-out;
+}
+
+.amenities-card:hover p {
+  color: #fff;
+  transition: 0.2s all ease-in-out;
+}
+
+#amenities-track {
+  padding: 20px 10px;
+}
